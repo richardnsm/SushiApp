@@ -1,0 +1,14 @@
+<div class="m-8 grid md:grid-cols-2 lg:grid-cols-3">
+  <div *ngFor="let box of boxes" class="bg-[#ECECEC] border border-[#BBC6D6] overflow-hidden shadow-lg m-3 mx-16 beige">
+    <img [src]="'http://localhost:8080/api/image/' + box.image" class="object-cover mx-auto" />
+    <div class="p-4">
+      <p class="text-lg mb-2 text-center">{{ box.nom }}</p>
+      <h2 class="font-bold text-center">{{ box.prix | number : "1.2-2" }}€</h2>
+      <div class="flex justify-center">
+        <button class="mt-4 mb-2 flex items-center bg-black rounded-full font-bold text-white py-2 px-4 hover:scale-105 hover:bg-gray-800 transition-all duration-300">
+          Ajouter au panier
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
