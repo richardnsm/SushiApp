@@ -23,8 +23,8 @@ export class HomeComponent {
         box.nom = boxApi.nom;
         box.saveurs = boxApi.saveurs;
         box.nbPieces = boxApi.nbPieces;
-        box.image = boxApi.image;
         box.prix = boxApi.prix;
+        box.image = boxApi.image;
         box.aliments = boxApi.aliments;
         this.boxes.push(box);
         console.log(this.boxes);
@@ -32,5 +32,4 @@ export class HomeComponent {
 
       })
     }
-
 }

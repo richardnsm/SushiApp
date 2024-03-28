@@ -8,13 +8,15 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header/header.component';
 import { LucideAngularModule, ShoppingCart } from 'lucide-angular';
 import { CartComponent } from './cart/cart/cart.component';
+import { DetailsComponent } from './details/details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    CartComponent
+    CartComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
